@@ -1,0 +1,25 @@
+{
+  "password_masked": "Te******",
+  "length": 8,
+  "character_sets": {
+    "lowercase": true,
+    "uppercase": true,
+    "digits": true,
+    "symbols": true
+  },
+  "pool_size": 95,
+  "entropy_bits": 52.56,
+  "has_repetition": false,
+  "has_sequence": true,
+  "is_common": false,
+  "score": 50,
+  "strength": "MEDIUM",
+  "color": "yellow",
+  "crack_time": "3.8 days",
+  "crack_seconds": 331975.91488180036,
+  "suggestions": [
+    "Use at least 12 characters (16+ is better).",
+    "Avoid sequences (e.g., 'abc', '123', 'qwerty').",
+    "Decent password, but can be stronger."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "password_masked": "P@******",
+  "length": 8,
+  "character_sets": {
+    "lowercase": true,
+    "uppercase": true,
+    "digits": true,
+    "symbols": true
+  },
+  "pool_size": 95,
+  "entropy_bits": 52.56,
+  "has_repetition": false,
+  "has_sequence": false,
+  "is_common": false,
+  "score": 60,
+  "strength": "STRONG",
+  "color": "green",
+  "crack_time": "3.8 days",
+  "crack_seconds": 331975.91488180036,
+  "suggestions": [
+    "Use at least 12 characters (16+ is better).",
+    "Decent password, but can be stronger."
+  ]
+}

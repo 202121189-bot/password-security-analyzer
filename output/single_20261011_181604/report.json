@@ -1,0 +1,24 @@
+{
+  "password_masked": "My************",
+  "length": 14,
+  "character_sets": {
+    "lowercase": true,
+    "uppercase": true,
+    "digits": true,
+    "symbols": true
+  },
+  "pool_size": 95,
+  "entropy_bits": 91.98,
+  "has_repetition": false,
+  "has_sequence": true,
+  "is_common": true,
+  "score": 45,
+  "strength": "MEDIUM",
+  "color": "yellow",
+  "crack_time": "8 billion years",
+  "crack_seconds": 2.4417939058900784e+17,
+  "suggestions": [
+    "Avoid sequences (e.g., 'abc', '123', 'qwerty').",
+    "This password is in common password lists — change it immediately!"
+  ]
+}

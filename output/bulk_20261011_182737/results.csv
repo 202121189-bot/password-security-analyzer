@@ -1,0 +1,350 @@
+password,length,entropy,score,strength,crack_time,is_common,has_sequence,has_repetition
+# Common Passwords Wordlist,27,173.05,52,MEDIUM,> trillions of years,True,False,False
+"# Source: public security research (SecLists, HaveIBeenPwned, RockYou)",70,448.66,82,VERY STRONG,> trillions of years,False,False,False
+# Lines starting with # are ignored,35,224.33,82,VERY STRONG,> trillions of years,False,False,False
+123456,6,19.93,0,VERY WEAK,instantly,True,True,False
+password,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+12345678,8,26.58,0,VERY WEAK,instantly,True,True,False
+qwerty,6,28.2,0,VERY WEAK,instantly,True,True,False
+123456789,9,29.9,0,VERY WEAK,instantly,True,True,False
+12345,5,16.61,0,VERY WEAK,instantly,True,True,False
+1234,4,13.29,0,VERY WEAK,instantly,True,True,False
+111111,6,19.93,0,VERY WEAK,instantly,True,False,True
+1234567,7,23.25,0,VERY WEAK,instantly,True,True,False
+dragon,6,28.2,0,VERY WEAK,instantly,True,False,False
+123123,6,19.93,0,VERY WEAK,instantly,True,True,False
+baseball,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+abc123,6,31.02,0,VERY WEAK,instantly,True,True,False
+football,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+monkey,6,28.2,0,VERY WEAK,instantly,True,False,False
+letmein,7,32.9,0,VERY WEAK,instantly,True,False,False
+696969,6,19.93,0,VERY WEAK,instantly,True,False,False
+shadow,6,28.2,0,VERY WEAK,instantly,True,False,False
+master,6,28.2,0,VERY WEAK,instantly,True,False,False
+666666,6,19.93,0,VERY WEAK,instantly,True,False,True
+qwertyuiop,10,47.0,0,VERY WEAK,2.0 hours,True,True,False
+123321,6,19.93,0,VERY WEAK,instantly,True,True,False
+mustang,7,32.9,0,VERY WEAK,instantly,True,False,False
+1234567890,10,33.22,0,VERY WEAK,instantly,True,True,False
+michael,7,32.9,0,VERY WEAK,instantly,True,False,False
+654321,6,19.93,0,VERY WEAK,instantly,True,True,False
+pussy,5,23.5,0,VERY WEAK,instantly,True,False,False
+superman,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+1qaz2wsx,8,41.36,15,VERY WEAK,2.4 minutes,True,False,False
+7777777,7,23.25,0,VERY WEAK,instantly,True,False,True
+fuckyou,7,32.9,0,VERY WEAK,instantly,True,False,False
+121212,6,19.93,0,VERY WEAK,instantly,True,False,False
+000000,6,19.93,0,VERY WEAK,instantly,True,False,True
+qazwsx,6,28.2,0,VERY WEAK,instantly,True,False,False
+123qwe,6,31.02,0,VERY WEAK,instantly,True,True,False
+killer,6,28.2,0,VERY WEAK,instantly,True,False,False
+trustno1,8,41.36,15,VERY WEAK,2.4 minutes,True,False,False
+jordan,6,28.2,0,VERY WEAK,instantly,True,False,False
+jennifer,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+zxcvbnm,7,32.9,0,VERY WEAK,instantly,True,True,False
+asdfgh,6,28.2,0,VERY WEAK,instantly,True,True,False
+hunter,6,28.2,0,VERY WEAK,instantly,True,False,False
+buster,6,28.2,0,VERY WEAK,instantly,True,False,False
+soccer,6,28.2,0,VERY WEAK,instantly,True,False,False
+harley,6,28.2,0,VERY WEAK,instantly,True,False,False
+batman,6,28.2,0,VERY WEAK,instantly,True,False,False
+andrew,6,28.2,0,VERY WEAK,instantly,True,True,False
+tigger,6,28.2,0,VERY WEAK,instantly,True,False,False
+sunshine,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+iloveyou,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+fuckme,6,28.2,0,VERY WEAK,instantly,True,False,False
+2000,4,13.29,0,VERY WEAK,instantly,True,False,True
+charlie,7,32.9,0,VERY WEAK,instantly,True,False,False
+robert,6,28.2,0,VERY WEAK,instantly,True,True,False
+thomas,6,28.2,0,VERY WEAK,instantly,True,False,False
+hockey,6,28.2,0,VERY WEAK,instantly,True,False,False
+ranger,6,28.2,0,VERY WEAK,instantly,True,False,False
+daniel,6,28.2,0,VERY WEAK,instantly,True,False,False
+starwars,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+klaster,7,32.9,0,VERY WEAK,instantly,True,False,False
+112233,6,19.93,0,VERY WEAK,instantly,True,False,False
+george,6,28.2,0,VERY WEAK,instantly,True,False,False
+asshole,7,32.9,0,VERY WEAK,instantly,True,False,False
+computer,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+michelle,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+jessica,7,32.9,0,VERY WEAK,instantly,True,False,False
+pepper,6,28.2,0,VERY WEAK,instantly,True,False,False
+1111,4,13.29,0,VERY WEAK,instantly,True,False,True
+zxcvbn,6,28.2,0,VERY WEAK,instantly,True,True,False
+555555,6,19.93,0,VERY WEAK,instantly,True,False,True
+11111111,8,26.58,0,VERY WEAK,instantly,True,False,True
+131313,6,19.93,0,VERY WEAK,instantly,True,False,False
+freedom,7,32.9,0,VERY WEAK,instantly,True,False,False
+777777,6,19.93,0,VERY WEAK,instantly,True,False,True
+pass,4,18.8,0,VERY WEAK,instantly,True,False,False
+fuck,4,18.8,0,VERY WEAK,instantly,True,False,False
+maggie,6,28.2,0,VERY WEAK,instantly,True,False,False
+159753,6,19.93,0,VERY WEAK,instantly,True,False,False
+aaaaaa,6,28.2,0,VERY WEAK,instantly,True,False,True
+ginger,6,28.2,0,VERY WEAK,instantly,True,False,False
+princess,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+joshua,6,28.2,0,VERY WEAK,instantly,True,False,False
+cheese,6,28.2,0,VERY WEAK,instantly,True,False,False
+amanda,6,28.2,0,VERY WEAK,instantly,True,False,False
+summer,6,28.2,0,VERY WEAK,instantly,True,False,False
+love,4,18.8,0,VERY WEAK,instantly,True,False,False
+ashley,6,28.2,0,VERY WEAK,instantly,True,False,False
+nicole,6,28.2,0,VERY WEAK,instantly,True,False,False
+chelsea,7,32.9,0,VERY WEAK,instantly,True,False,False
+biteme,6,28.2,0,VERY WEAK,instantly,True,False,False
+matthew,7,32.9,0,VERY WEAK,instantly,True,False,False
+access,6,28.2,0,VERY WEAK,instantly,True,False,False
+yankees,7,32.9,0,VERY WEAK,instantly,True,False,False
+987654321,9,29.9,0,VERY WEAK,instantly,True,True,False
+dallas,6,28.2,0,VERY WEAK,instantly,True,False,False
+austin,6,28.2,0,VERY WEAK,instantly,True,False,False
+thunder,7,32.9,0,VERY WEAK,instantly,True,False,False
+taylor,6,28.2,0,VERY WEAK,instantly,True,False,False
+matrix,6,28.2,0,VERY WEAK,instantly,True,False,False
+william,7,32.9,0,VERY WEAK,instantly,True,False,False
+corvette,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+hello,5,23.5,0,VERY WEAK,instantly,True,False,False
+martin,6,28.2,0,VERY WEAK,instantly,True,False,False
+heather,7,32.9,0,VERY WEAK,instantly,True,False,False
+secret,6,28.2,0,VERY WEAK,instantly,True,False,False
+fucker,6,28.2,0,VERY WEAK,instantly,True,False,False
+merlin,6,28.2,0,VERY WEAK,instantly,True,False,False
+diamond,7,32.9,0,VERY WEAK,instantly,True,False,False
+1234qwer,8,41.36,5,VERY WEAK,2.4 minutes,True,True,False
+gfhjkm,6,28.2,0,VERY WEAK,instantly,True,True,False
+hammer,6,28.2,0,VERY WEAK,instantly,True,False,False
+silver,6,28.2,0,VERY WEAK,instantly,True,False,False
+222222,6,19.93,0,VERY WEAK,instantly,True,False,True
+88888888,8,26.58,0,VERY WEAK,instantly,True,False,True
+anthony,7,32.9,0,VERY WEAK,instantly,True,False,False
+justin,6,28.2,0,VERY WEAK,instantly,True,False,False
+test,4,18.8,0,VERY WEAK,instantly,True,False,False
+bailey,6,28.2,0,VERY WEAK,instantly,True,False,False
+q1w2e3r4t5,10,51.7,15,VERY WEAK,2.1 days,True,False,False
+patrick,7,32.9,0,VERY WEAK,instantly,True,False,False
+internet,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+scooter,7,32.9,0,VERY WEAK,instantly,True,False,False
+orange,6,28.2,0,VERY WEAK,instantly,True,False,False
+11111,5,16.61,0,VERY WEAK,instantly,True,False,True
+golfer,6,28.2,0,VERY WEAK,instantly,True,False,False
+cookie,6,28.2,0,VERY WEAK,instantly,True,False,False
+richard,7,32.9,0,VERY WEAK,instantly,True,False,False
+samantha,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+bigdog,6,28.2,0,VERY WEAK,instantly,True,False,False
+guitar,6,28.2,0,VERY WEAK,instantly,True,False,False
+jackson,7,32.9,0,VERY WEAK,instantly,True,False,False
+whatever,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+mickey,6,28.2,0,VERY WEAK,instantly,True,False,False
+chicken,7,32.9,0,VERY WEAK,instantly,True,False,False
+sparky,6,28.2,0,VERY WEAK,instantly,True,False,False
+snoopy,6,28.2,0,VERY WEAK,instantly,True,False,False
+maverick,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+phoenix,7,32.9,0,VERY WEAK,instantly,True,False,False
+camaro,6,28.2,0,VERY WEAK,instantly,True,False,False
+sexy,4,18.8,0,VERY WEAK,instantly,True,False,False
+peanut,6,28.2,0,VERY WEAK,instantly,True,False,False
+morgan,6,28.2,0,VERY WEAK,instantly,True,False,False
+welcome,7,32.9,0,VERY WEAK,instantly,True,False,False
+falcon,6,28.2,0,VERY WEAK,instantly,True,False,False
+cowboy,6,28.2,0,VERY WEAK,instantly,True,False,False
+ferrari,7,32.9,0,VERY WEAK,instantly,True,False,False
+samsung,7,32.9,0,VERY WEAK,instantly,True,False,False
+andrea,6,28.2,0,VERY WEAK,instantly,True,False,False
+smokey,6,28.2,0,VERY WEAK,instantly,True,False,False
+steelers,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+joseph,6,28.2,0,VERY WEAK,instantly,True,False,False
+mercedes,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+dakota,6,28.2,0,VERY WEAK,instantly,True,False,False
+arsenal,7,32.9,0,VERY WEAK,instantly,True,False,False
+eagles,6,28.2,0,VERY WEAK,instantly,True,False,False
+melissa,7,32.9,0,VERY WEAK,instantly,True,False,False
+boomer,6,28.2,0,VERY WEAK,instantly,True,False,False
+booboo,6,28.2,0,VERY WEAK,instantly,True,False,False
+spider,6,28.2,0,VERY WEAK,instantly,True,False,False
+nascar,6,28.2,0,VERY WEAK,instantly,True,False,False
+monster,7,32.9,0,VERY WEAK,instantly,True,False,False
+tigers,6,28.2,0,VERY WEAK,instantly,True,False,False
+yellow,6,28.2,0,VERY WEAK,instantly,True,False,False
+xxxxxx,6,28.2,0,VERY WEAK,instantly,True,False,True
+123123123,9,29.9,0,VERY WEAK,instantly,True,True,False
+gateway,7,32.9,0,VERY WEAK,instantly,True,False,False
+marina,6,28.2,0,VERY WEAK,instantly,True,False,False
+diablo,6,28.2,0,VERY WEAK,instantly,True,False,False
+bulldog,7,32.9,0,VERY WEAK,instantly,True,False,False
+qwer1234,8,41.36,5,VERY WEAK,2.4 minutes,True,True,False
+compaq,6,28.2,0,VERY WEAK,instantly,True,False,False
+purple,6,28.2,0,VERY WEAK,instantly,True,False,False
+hardcore,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+banana,6,28.2,0,VERY WEAK,instantly,True,False,False
+junior,6,28.2,0,VERY WEAK,instantly,True,False,False
+hannah,6,28.2,0,VERY WEAK,instantly,True,False,False
+123654,6,19.93,0,VERY WEAK,instantly,True,True,False
+porsche,7,32.9,0,VERY WEAK,instantly,True,False,False
+lakers,6,28.2,0,VERY WEAK,instantly,True,False,False
+iceman,6,28.2,0,VERY WEAK,instantly,True,False,False
+money,5,23.5,0,VERY WEAK,instantly,True,False,False
+cowboys,7,32.9,0,VERY WEAK,instantly,True,False,False
+987654,6,19.93,0,VERY WEAK,instantly,True,True,False
+london,6,28.2,0,VERY WEAK,instantly,True,False,False
+tennis,6,28.2,0,VERY WEAK,instantly,True,False,False
+999999,6,19.93,0,VERY WEAK,instantly,True,False,True
+ncc1701,7,36.19,0,VERY WEAK,3.9 seconds,True,False,False
+coffee,6,28.2,0,VERY WEAK,instantly,True,False,False
+scooby,6,28.2,0,VERY WEAK,instantly,True,False,False
+0000,4,13.29,0,VERY WEAK,instantly,True,False,True
+miller,6,28.2,0,VERY WEAK,instantly,True,False,False
+boston,6,28.2,0,VERY WEAK,instantly,True,False,False
+q1w2e3r4,8,41.36,15,VERY WEAK,2.4 minutes,True,False,False
+fuckoff,7,32.9,0,VERY WEAK,instantly,True,False,False
+brandon,7,32.9,0,VERY WEAK,instantly,True,False,False
+yamaha,6,28.2,0,VERY WEAK,instantly,True,False,False
+chester,7,32.9,0,VERY WEAK,instantly,True,False,False
+mother,6,28.2,0,VERY WEAK,instantly,True,False,False
+forever,7,32.9,0,VERY WEAK,instantly,True,False,False
+johnny,6,28.2,0,VERY WEAK,instantly,True,False,False
+edward,6,28.2,0,VERY WEAK,instantly,True,False,False
+333333,6,19.93,0,VERY WEAK,instantly,True,False,True
+oliver,6,28.2,0,VERY WEAK,instantly,True,False,False
+redsox,6,28.2,0,VERY WEAK,instantly,True,False,False
+player,6,28.2,0,VERY WEAK,instantly,True,False,False
+nikita,6,28.2,0,VERY WEAK,instantly,True,False,False
+knight,6,28.2,0,VERY WEAK,instantly,True,False,False
+fender,6,28.2,0,VERY WEAK,instantly,True,False,False
+barney,6,28.2,0,VERY WEAK,instantly,True,False,False
+midnight,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+please,6,28.2,0,VERY WEAK,instantly,True,False,False
+brandy,6,28.2,0,VERY WEAK,instantly,True,False,False
+chicago,7,32.9,0,VERY WEAK,instantly,True,False,False
+badboy,6,28.2,0,VERY WEAK,instantly,True,False,False
+iwantu,6,28.2,0,VERY WEAK,instantly,True,False,False
+slayer,6,28.2,0,VERY WEAK,instantly,True,False,False
+rangers,7,32.9,0,VERY WEAK,instantly,True,False,False
+charles,7,32.9,0,VERY WEAK,instantly,True,False,False
+angel,5,23.5,0,VERY WEAK,instantly,True,False,False
+flower,6,28.2,0,VERY WEAK,instantly,True,True,False
+bigdaddy,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+rabbit,6,28.2,0,VERY WEAK,instantly,True,False,False
+wizard,6,28.2,0,VERY WEAK,instantly,True,False,False
+bigdick,7,32.9,0,VERY WEAK,instantly,True,False,False
+jasper,6,28.2,0,VERY WEAK,instantly,True,False,False
+enter,5,23.5,0,VERY WEAK,instantly,True,False,False
+rachel,6,28.2,0,VERY WEAK,instantly,True,False,False
+chris,5,23.5,0,VERY WEAK,instantly,True,False,False
+steven,6,28.2,0,VERY WEAK,instantly,True,False,False
+winner,6,28.2,0,VERY WEAK,instantly,True,False,False
+adidas,6,28.2,0,VERY WEAK,instantly,True,False,False
+victoria,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+natasha,7,32.9,0,VERY WEAK,instantly,True,False,False
+1q2w3e4r,8,41.36,15,VERY WEAK,2.4 minutes,True,False,False
+jasmine,7,32.9,0,VERY WEAK,instantly,True,False,False
+winter,6,28.2,0,VERY WEAK,instantly,True,False,False
+prince,6,28.2,0,VERY WEAK,instantly,True,False,False
+panties,7,32.9,0,VERY WEAK,instantly,True,False,False
+marine,6,28.2,0,VERY WEAK,instantly,True,False,False
+ghbdtn,6,28.2,0,VERY WEAK,instantly,True,False,False
+fishing,7,32.9,0,VERY WEAK,instantly,True,False,False
+cocacola,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+casper,6,28.2,0,VERY WEAK,instantly,True,False,False
+james,5,23.5,0,VERY WEAK,instantly,True,False,False
+232323,6,19.93,0,VERY WEAK,instantly,True,False,False
+raiders,7,32.9,0,VERY WEAK,instantly,True,False,False
+888888,6,19.93,0,VERY WEAK,instantly,True,False,True
+marlboro,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+gandalf,7,32.9,0,VERY WEAK,instantly,True,False,False
+asdfasdf,8,37.6,0,VERY WEAK,10.4 seconds,True,True,False
+crystal,7,32.9,0,VERY WEAK,instantly,True,False,False
+87654321,8,26.58,0,VERY WEAK,instantly,True,True,False
+12344321,8,26.58,0,VERY WEAK,instantly,True,True,False
+sexsex,6,28.2,0,VERY WEAK,instantly,True,False,False
+golden,6,28.2,0,VERY WEAK,instantly,True,False,False
+blowme,6,28.2,0,VERY WEAK,instantly,True,False,False
+bigtits,7,32.9,0,VERY WEAK,instantly,True,False,False
+8675309,7,23.25,0,VERY WEAK,instantly,True,False,False
+panther,7,32.9,0,VERY WEAK,instantly,True,False,False
+lauren,6,28.2,0,VERY WEAK,instantly,True,False,False
+angela,6,28.2,0,VERY WEAK,instantly,True,False,False
+bitch,5,23.5,0,VERY WEAK,instantly,True,False,False
+spanky,6,28.2,0,VERY WEAK,instantly,True,False,False
+thx1138,7,36.19,0,VERY WEAK,3.9 seconds,True,False,False
+angels,6,28.2,0,VERY WEAK,instantly,True,False,False
+madison,7,32.9,0,VERY WEAK,instantly,True,False,False
+winston,7,32.9,0,VERY WEAK,instantly,True,False,False
+shannon,7,32.9,0,VERY WEAK,instantly,True,False,False
+mike,4,18.8,0,VERY WEAK,instantly,True,False,False
+toyota,6,28.2,0,VERY WEAK,instantly,True,False,False
+blowjob,7,32.9,0,VERY WEAK,instantly,True,False,False
+jordan23,8,41.36,15,VERY WEAK,2.4 minutes,True,False,False
+canada,6,28.2,0,VERY WEAK,instantly,True,False,False
+sophie,6,28.2,0,VERY WEAK,instantly,True,False,False
+apples,6,28.2,0,VERY WEAK,instantly,True,False,False
+dick,4,18.8,0,VERY WEAK,instantly,True,False,False
+tiger,5,23.5,0,VERY WEAK,instantly,True,False,False
+razz,4,18.8,0,VERY WEAK,instantly,True,False,False
+123abc,6,31.02,0,VERY WEAK,instantly,True,True,False
+pokemon,7,32.9,0,VERY WEAK,instantly,True,False,False
+qazxsw,6,28.2,0,VERY WEAK,instantly,True,False,False
+55555,5,16.61,0,VERY WEAK,instantly,True,False,True
+qwaszx,6,28.2,0,VERY WEAK,instantly,True,False,False
+muffin,6,28.2,0,VERY WEAK,instantly,True,False,False
+johnson,7,32.9,0,VERY WEAK,instantly,True,False,False
+murphy,6,28.2,0,VERY WEAK,instantly,True,False,False
+cooper,6,28.2,0,VERY WEAK,instantly,True,False,False
+jonathan,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+liverpoo,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+david,5,23.5,0,VERY WEAK,instantly,True,False,False
+danielle,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+159357,6,19.93,0,VERY WEAK,instantly,True,False,False
+jackie,6,28.2,0,VERY WEAK,instantly,True,False,False
+1990,4,13.29,0,VERY WEAK,instantly,True,False,False
+123456a,7,36.19,0,VERY WEAK,3.9 seconds,True,True,False
+789456,6,19.93,0,VERY WEAK,instantly,True,True,False
+turtle,6,28.2,0,VERY WEAK,instantly,True,False,False
+horny,5,23.5,0,VERY WEAK,instantly,True,False,False
+abcd1234,8,41.36,5,VERY WEAK,2.4 minutes,True,True,False
+scorpion,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+qazwsxedc,9,42.3,0,VERY WEAK,4.5 minutes,True,True,False
+101010,6,19.93,0,VERY WEAK,instantly,True,False,False
+butter,6,28.2,0,VERY WEAK,instantly,True,False,False
+carlos,6,28.2,0,VERY WEAK,instantly,True,False,False
+password1,9,46.53,15,VERY WEAK,1.4 hours,True,False,False
+dennis,6,28.2,0,VERY WEAK,instantly,True,False,False
+slipknot,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+qwerty123,9,46.53,5,VERY WEAK,1.4 hours,True,True,False
+booger,6,28.2,0,VERY WEAK,instantly,True,False,False
+asdf,4,18.8,0,VERY WEAK,instantly,True,True,False
+1991,4,13.29,0,VERY WEAK,instantly,True,False,False
+black,5,23.5,0,VERY WEAK,instantly,True,False,False
+startrek,8,37.6,0,VERY WEAK,10.4 seconds,True,True,False
+12341234,8,26.58,0,VERY WEAK,instantly,True,True,False
+cameron,7,32.9,0,VERY WEAK,instantly,True,False,False
+newyork,7,32.9,0,VERY WEAK,instantly,True,False,False
+rainbow,7,32.9,0,VERY WEAK,instantly,True,False,False
+nathan,6,28.2,0,VERY WEAK,instantly,True,False,False
+john,4,18.8,0,VERY WEAK,instantly,True,False,False
+1992,4,13.29,0,VERY WEAK,instantly,True,False,False
+rocket,6,28.2,0,VERY WEAK,instantly,True,False,False
+viking,6,28.2,0,VERY WEAK,instantly,True,False,False
+redskins,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+butthead,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+asdfghjkl,9,42.3,0,VERY WEAK,4.5 minutes,True,True,False
+1212,4,13.29,0,VERY WEAK,instantly,True,False,False
+sierra,6,28.2,0,VERY WEAK,instantly,True,False,False
+peaches,7,32.9,0,VERY WEAK,instantly,True,False,False
+gemini,6,28.2,0,VERY WEAK,instantly,True,False,False
+doctor,6,28.2,0,VERY WEAK,instantly,True,False,False
+wilson,6,28.2,0,VERY WEAK,instantly,True,False,False
+sandra,6,28.2,0,VERY WEAK,instantly,True,False,False
+helpme,6,28.2,0,VERY WEAK,instantly,True,False,False
+qwertyui,8,37.6,0,VERY WEAK,10.4 seconds,True,True,False
+victor,6,28.2,0,VERY WEAK,instantly,True,False,False
+flamingo,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+kingdom,7,32.9,0,VERY WEAK,instantly,True,False,False
+farmer,6,28.2,0,VERY WEAK,instantly,True,False,False
+newcastle,9,42.3,8,VERY WEAK,4.5 minutes,True,False,False
+jack,4,18.8,0,VERY WEAK,instantly,True,False,False
+hogwarts,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+gunners,7,32.9,0,VERY WEAK,instantly,True,False,False
+spitfire,8,37.6,0,VERY WEAK,10.4 seconds,True,False,False
+matrix,6,28.2,0,VERY WEAK,instantly,True,False,False
+tobias,6,28.2,0,VERY WEAK,instantly,True,False,False
+maddog,6,28.2,0,VERY WEAK,instantly,True,False,False

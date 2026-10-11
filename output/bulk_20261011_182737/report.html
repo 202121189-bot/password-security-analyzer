@@ -1,0 +1,4801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Password Security Report</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #0e1117; color: #e6edf3;
+    margin: 0; padding: 24px;
+  }
+  h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 12px; }
+  h2 { color: #79c0ff; margin-top: 32px; border-left: 4px solid #58a6ff; padding-left: 12px; }
+  .meta {
+    background: #161b22; padding: 16px; border-radius: 8px;
+    border: 1px solid #30363d; margin-bottom: 24px;
+  }
+  .meta span { color: #8b949e; }
+  .meta b { color: #e6edf3; }
+  .score-card {
+    text-align: center; padding: 24px; border-radius: 12px;
+    background: #161b22; border: 2px solid #30363d; margin: 24px 0;
+  }
+  .score-num {
+    font-size: 72px; font-weight: bold;
+    background: linear-gradient(135deg, #58a6ff, #7ee787);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .score-label { font-size: 24px; margin-top: 8px; }
+  .info-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; margin: 20px 0;
+  }
+  .info-card {
+    background: #161b22; padding: 14px; border-radius: 8px;
+    border: 1px solid #30363d;
+  }
+  .info-card .label { color: #8b949e; font-size: 12px; }
+  .info-card .value { font-size: 18px; font-weight: bold; margin-top: 4px; }
+  table {
+    width: 100%; border-collapse: collapse; margin-top: 12px;
+    background: #161b22; border-radius: 8px; overflow: hidden;
+    font-size: 13px;
+  }
+  th { background: #21262d; color: #79c0ff; padding: 10px; text-align: left; }
+  td { padding: 8px 10px; border-top: 1px solid #30363d; }
+  tr:hover { background: #1c2128; }
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: bold;
+  }
+  .badge-green { background: #238636; color: white; }
+  .badge-red { background: #da3633; color: white; }
+  .badge-yellow { background: #9e6a03; color: white; }
+  .badge-gray { background: #30363d; color: #e6edf3; }
+  ul { background: #161b22; padding: 16px 16px 16px 40px; border-radius: 8px;
+       border: 1px solid #30363d; }
+  li { margin: 6px 0; }
+  footer { margin-top: 40px; text-align: center; color: #8b949e; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>🛡️ Password Security Report</h1>
+
+<div class="meta">
+  <p><span>Generated at:</span> <b>2026-10-11T18:27:37</b></p>
+  <p><span>Mode:</span> <b>BULK</b></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<h2>📊 Summary</h2>
+<div class="info-grid">
+  <div class="info-card">
+    <div class="label">Total</div>
+    <div class="value">349</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Average Score</div>
+    <div class="value">1.0/100</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Very Weak</div>
+    <div class="value" style="color:#da3633;">346</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Weak</div>
+    <div class="value" style="color:#f0883e;">0</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Medium</div>
+    <div class="value" style="color:#d29922;">1</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Strong</div>
+    <div class="value" style="color:#3fb950;">0</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Very Strong</div>
+    <div class="value" style="color:#7ee787;">2</div>
+  </div>
+</div>
+
+<h2>🔥 Weakest 10 Passwords</h2>
+<table>
+  <tr><th>Password</th><th>Length</th><th>Entropy</th><th>Score</th><th>Strength</th><th>Crack Time</th></tr>
+  
+  <tr>
+    <td><code>123456</code></td>
+    <td>6</td>
+    <td>19.93</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>password</code></td>
+    <td>8</td>
+    <td>37.6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>10.4 seconds</td>
+  </tr>
+  
+  <tr>
+    <td><code>12345678</code></td>
+    <td>8</td>
+    <td>26.58</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwerty</code></td>
+    <td>6</td>
+    <td>28.2</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>123456789</code></td>
+    <td>9</td>
+    <td>29.9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>12345</code></td>
+    <td>5</td>
+    <td>16.61</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>1234</code></td>
+    <td>4</td>
+    <td>13.29</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>111111</code></td>
+    <td>6</td>
+    <td>19.93</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>1234567</code></td>
+    <td>7</td>
+    <td>23.25</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+  <tr>
+    <td><code>dragon</code></td>
+    <td>6</td>
+    <td>28.2</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td>instantly</td>
+  </tr>
+  
+</table>
+
+<h2>📋 All Results</h2>
+<table>
+  <tr><th>Password</th><th>Length</th><th>Score</th><th>Strength</th><th>Common</th><th>Sequence</th></tr>
+  
+  <tr>
+    <td><code># Common Passwords Wordlist</code></td>
+    <td>27</td>
+    <td>52</td>
+    <td>
+      
+        <span class="badge badge-yellow">MEDIUM</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code># Source: public security research (SecLists, HaveIBeenPwned, RockYou)</code></td>
+    <td>70</td>
+    <td>82</td>
+    <td>
+      
+        <span class="badge badge-green">VERY STRONG</span>
+      
+    </td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code># Lines starting with # are ignored</code></td>
+    <td>35</td>
+    <td>82</td>
+    <td>
+      
+        <span class="badge badge-green">VERY STRONG</span>
+      
+    </td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123456</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>password</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>12345678</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>qwerty</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>123456789</code></td>
+    <td>9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>12345</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>1234</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>111111</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1234567</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>dragon</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123123</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>baseball</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>abc123</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>football</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>monkey</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>letmein</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>696969</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>shadow</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>master</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>666666</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwertyuiop</code></td>
+    <td>10</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>123321</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>mustang</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1234567890</code></td>
+    <td>10</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>michael</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>654321</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>pussy</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>superman</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1qaz2wsx</code></td>
+    <td>8</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>7777777</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fuckyou</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>121212</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>000000</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qazwsx</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123qwe</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>killer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>trustno1</code></td>
+    <td>8</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jordan</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jennifer</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>zxcvbnm</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>asdfgh</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>hunter</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>buster</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>soccer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>harley</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>batman</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>andrew</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>tigger</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sunshine</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>iloveyou</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fuckme</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>2000</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>charlie</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>robert</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>thomas</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>hockey</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ranger</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>daniel</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>starwars</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>klaster</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>112233</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>george</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>asshole</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>computer</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>michelle</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jessica</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>pepper</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1111</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>zxcvbn</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>555555</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>11111111</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>131313</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>freedom</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>777777</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>pass</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fuck</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>maggie</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>159753</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>aaaaaa</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ginger</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>princess</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>joshua</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cheese</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>amanda</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>summer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>love</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ashley</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>nicole</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>chelsea</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>biteme</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>matthew</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>access</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>yankees</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>987654321</code></td>
+    <td>9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>dallas</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>austin</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>thunder</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>taylor</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>matrix</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>william</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>corvette</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>hello</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>martin</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>heather</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>secret</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fucker</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>merlin</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>diamond</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1234qwer</code></td>
+    <td>8</td>
+    <td>5</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>gfhjkm</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>hammer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>silver</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>222222</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>88888888</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>anthony</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>justin</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>test</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bailey</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>q1w2e3r4t5</code></td>
+    <td>10</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>patrick</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>internet</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>scooter</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>orange</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>11111</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>golfer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cookie</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>richard</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>samantha</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bigdog</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>guitar</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jackson</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>whatever</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>mickey</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>chicken</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sparky</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>snoopy</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>maverick</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>phoenix</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>camaro</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sexy</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>peanut</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>morgan</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>welcome</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>falcon</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cowboy</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ferrari</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>samsung</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>andrea</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>smokey</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>steelers</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>joseph</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>mercedes</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>dakota</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>arsenal</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>eagles</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>melissa</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>boomer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>booboo</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>spider</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>nascar</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>monster</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>tigers</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>yellow</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>xxxxxx</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123123123</code></td>
+    <td>9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>gateway</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>marina</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>diablo</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bulldog</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwer1234</code></td>
+    <td>8</td>
+    <td>5</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>compaq</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>purple</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>hardcore</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>banana</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>junior</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>hannah</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123654</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>porsche</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>lakers</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>iceman</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>money</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cowboys</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>987654</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>london</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>tennis</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>999999</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ncc1701</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>coffee</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>scooby</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>0000</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>miller</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>boston</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>q1w2e3r4</code></td>
+    <td>8</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fuckoff</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>brandon</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>yamaha</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>chester</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>mother</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>forever</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>johnny</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>edward</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>333333</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>oliver</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>redsox</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>player</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>nikita</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>knight</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fender</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>barney</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>midnight</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>please</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>brandy</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>chicago</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>badboy</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>iwantu</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>slayer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>rangers</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>charles</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>angel</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>flower</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>bigdaddy</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>rabbit</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>wizard</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bigdick</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jasper</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>enter</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>rachel</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>chris</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>steven</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>winner</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>adidas</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>victoria</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>natasha</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1q2w3e4r</code></td>
+    <td>8</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jasmine</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>winter</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>prince</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>panties</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>marine</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>ghbdtn</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>fishing</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cocacola</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>casper</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>james</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>232323</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>raiders</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>888888</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>marlboro</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>gandalf</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>asdfasdf</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>crystal</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>87654321</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>12344321</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>sexsex</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>golden</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>blowme</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bigtits</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>8675309</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>panther</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>lauren</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>angela</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>bitch</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>spanky</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>thx1138</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>angels</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>madison</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>winston</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>shannon</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>mike</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>toyota</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>blowjob</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jordan23</code></td>
+    <td>8</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>canada</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sophie</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>apples</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>dick</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>tiger</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>razz</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123abc</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>pokemon</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qazxsw</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>55555</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwaszx</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>muffin</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>johnson</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>murphy</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>cooper</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jonathan</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>liverpoo</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>david</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>danielle</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>159357</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jackie</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1990</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>123456a</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>789456</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>turtle</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>horny</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>abcd1234</code></td>
+    <td>8</td>
+    <td>5</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>scorpion</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qazwsxedc</code></td>
+    <td>9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>101010</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>butter</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>carlos</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>password1</code></td>
+    <td>9</td>
+    <td>15</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>dennis</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>slipknot</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwerty123</code></td>
+    <td>9</td>
+    <td>5</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>booger</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>asdf</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>1991</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>black</code></td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>startrek</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>12341234</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>cameron</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>newyork</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>rainbow</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>nathan</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>john</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>1992</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>rocket</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>viking</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>redskins</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>butthead</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>asdfghjkl</code></td>
+    <td>9</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>1212</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sierra</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>peaches</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>gemini</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>doctor</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>wilson</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>sandra</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>helpme</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>qwertyui</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td><span class="badge badge-red">YES</span></td>
+  </tr>
+  
+  <tr>
+    <td><code>victor</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>flamingo</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>kingdom</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>farmer</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>newcastle</code></td>
+    <td>9</td>
+    <td>8</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>jack</code></td>
+    <td>4</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>hogwarts</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>gunners</code></td>
+    <td>7</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>spitfire</code></td>
+    <td>8</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>matrix</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>tobias</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+  <tr>
+    <td><code>maddog</code></td>
+    <td>6</td>
+    <td>0</td>
+    <td>
+      
+        <span class="badge badge-red">VERY WEAK</span>
+      
+    </td>
+    <td><span class="badge badge-red">YES</span></td>
+    <td>—</td>
+  </tr>
+  
+</table>
+
+
+
+<footer>
+  Generated by <b>Password Security Analyzer</b><br>
+  2026-10-11T18:27:37
+</footer>
+
+</body>
+</html>
