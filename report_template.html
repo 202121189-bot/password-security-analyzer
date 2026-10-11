@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Password Security Report</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #0e1117; color: #e6edf3;
+    margin: 0; padding: 24px;
+  }
+  h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 12px; }
+  h2 { color: #79c0ff; margin-top: 32px; border-left: 4px solid #58a6ff; padding-left: 12px; }
+  .meta {
+    background: #161b22; padding: 16px; border-radius: 8px;
+    border: 1px solid #30363d; margin-bottom: 24px;
+  }
+  .meta span { color: #8b949e; }
+  .meta b { color: #e6edf3; }
+  .score-card {
+    text-align: center; padding: 24px; border-radius: 12px;
+    background: #161b22; border: 2px solid #30363d; margin: 24px 0;
+  }
+  .score-num {
+    font-size: 72px; font-weight: bold;
+    background: linear-gradient(135deg, #58a6ff, #7ee787);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .score-label { font-size: 24px; margin-top: 8px; }
+  .info-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; margin: 20px 0;
+  }
+  .info-card {
+    background: #161b22; padding: 14px; border-radius: 8px;
+    border: 1px solid #30363d;
+  }
+  .info-card .label { color: #8b949e; font-size: 12px; }
+  .info-card .value { font-size: 18px; font-weight: bold; margin-top: 4px; }
+  table {
+    width: 100%; border-collapse: collapse; margin-top: 12px;
+    background: #161b22; border-radius: 8px; overflow: hidden;
+    font-size: 13px;
+  }
+  th { background: #21262d; color: #79c0ff; padding: 10px; text-align: left; }
+  td { padding: 8px 10px; border-top: 1px solid #30363d; }
+  tr:hover { background: #1c2128; }
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: bold;
+  }
+  .badge-green { background: #238636; color: white; }
+  .badge-red { background: #da3633; color: white; }
+  .badge-yellow { background: #9e6a03; color: white; }
+  .badge-gray { background: #30363d; color: #e6edf3; }
+  ul { background: #161b22; padding: 16px 16px 16px 40px; border-radius: 8px;
+       border: 1px solid #30363d; }
+  li { margin: 6px 0; }
+  footer { margin-top: 40px; text-align: center; color: #8b949e; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>🛡️ Password Security Report</h1>
+
+<div class="meta">
+  <p><span>Generated at:</span> <b>{{ generated_at }}</b></p>
+  <p><span>Mode:</span> <b>{{ mode|upper }}</b></p>
+</div>
+
+{# ============================================================ #}
+{# SINGLE MODE                                                    #}
+{# ============================================================ #}
+{% if mode == "single" %}
+
+<div class="score-card">
+  <div class="score-num">{{ report.score }}</div>
+  <div class="score-label">
+    {% if report.strength == "VERY STRONG" or report.strength == "STRONG" %}
+      <span class="badge badge-green">{{ report.strength }}</span>
+    {% elif report.strength == "MEDIUM" %}
+      <span class="badge badge-yellow">{{ report.strength }}</span>
+    {% else %}
+      <span class="badge badge-red">{{ report.strength }}</span>
+    {% endif %}
+  </div>
+</div>
+
+<h2>📊 Analysis Details</h2>
+<div class="info-grid">
+  <div class="info-card">
+    <div class="label">Length</div>
+    <div class="value">{{ report.length }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Entropy</div>
+    <div class="value">{{ report.entropy_bits }} bits</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Crack Time</div>
+    <div class="value">{{ report.crack_time }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Character Pool</div>
+    <div class="value">{{ report.pool_size }}</div>
+  </div>
+</div>
+
+<h2>🔤 Character Sets</h2>
+<table>
+  <tr><th>Type</th><th>Used</th></tr>
+  {% for key, value in report.character_sets.items() %}
+  <tr>
+    <td>{{ key }}</td>
+    <td>
+      {% if value %}
+        <span class="badge badge-green">YES</span>
+      {% else %}
+        <span class="badge badge-gray">NO</span>
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>⚠️ Pattern Detection</h2>
+<table>
+  <tr><th>Check</th><th>Result</th></tr>
+  <tr>
+    <td>Has repetition (aaa, 111)</td>
+    <td>{% if report.has_repetition %}<span class="badge badge-red">YES</span>{% else %}<span class="badge badge-green">NO</span>{% endif %}</td>
+  </tr>
+  <tr>
+    <td>Has sequence (abc, 123)</td>
+    <td>{% if report.has_sequence %}<span class="badge badge-red">YES</span>{% else %}<span class="badge badge-green">NO</span>{% endif %}</td>
+  </tr>
+  <tr>
+    <td>In common password list</td>
+    <td>{% if report.is_common %}<span class="badge badge-red">YES</span>{% else %}<span class="badge badge-green">NO</span>{% endif %}</td>
+  </tr>
+</table>
+
+<h2>💡 Suggestions</h2>
+<ul>
+  {% for s in report.suggestions %}
+    <li>{{ s }}</li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
+{# ============================================================ #}
+{# BULK MODE                                                      #}
+{# ============================================================ #}
+{% if mode == "bulk" %}
+
+<h2>📊 Summary</h2>
+<div class="info-grid">
+  <div class="info-card">
+    <div class="label">Total</div>
+    <div class="value">{{ result.summary.total }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Average Score</div>
+    <div class="value">{{ result.summary.average_score }}/100</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Very Weak</div>
+    <div class="value" style="color:#da3633;">{{ result.summary.very_weak }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Weak</div>
+    <div class="value" style="color:#f0883e;">{{ result.summary.weak }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Medium</div>
+    <div class="value" style="color:#d29922;">{{ result.summary.medium }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Strong</div>
+    <div class="value" style="color:#3fb950;">{{ result.summary.strong }}</div>
+  </div>
+  <div class="info-card">
+    <div class="label">Very Strong</div>
+    <div class="value" style="color:#7ee787;">{{ result.summary.very_strong }}</div>
+  </div>
+</div>
+
+<h2>🔥 Weakest 10 Passwords</h2>
+<table>
+  <tr><th>Password</th><th>Length</th><th>Entropy</th><th>Score</th><th>Strength</th><th>Crack Time</th></tr>
+  {% for r in result.weakest %}
+  <tr>
+    <td><code>{{ r.password }}</code></td>
+    <td>{{ r.length }}</td>
+    <td>{{ r.entropy_bits }}</td>
+    <td>{{ r.score }}</td>
+    <td>
+      {% if "STRONG" in r.strength %}
+        <span class="badge badge-green">{{ r.strength }}</span>
+      {% elif r.strength == "MEDIUM" %}
+        <span class="badge badge-yellow">{{ r.strength }}</span>
+      {% else %}
+        <span class="badge badge-red">{{ r.strength }}</span>
+      {% endif %}
+    </td>
+    <td>{{ r.crack_time }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>📋 All Results</h2>
+<table>
+  <tr><th>Password</th><th>Length</th><th>Score</th><th>Strength</th><th>Common</th><th>Sequence</th></tr>
+  {% for r in result.results %}
+  <tr>
+    <td><code>{{ r.password }}</code></td>
+    <td>{{ r.length }}</td>
+    <td>{{ r.score }}</td>
+    <td>
+      {% if "STRONG" in r.strength %}
+        <span class="badge badge-green">{{ r.strength }}</span>
+      {% elif r.strength == "MEDIUM" %}
+        <span class="badge badge-yellow">{{ r.strength }}</span>
+      {% else %}
+        <span class="badge badge-red">{{ r.strength }}</span>
+      {% endif %}
+    </td>
+    <td>{% if r.is_common %}<span class="badge badge-red">YES</span>{% else %}—{% endif %}</td>
+    <td>{% if r.has_sequence %}<span class="badge badge-red">YES</span>{% else %}—{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endif %}
+
+<footer>
+  Generated by <b>Password Security Analyzer</b><br>
+  {{ generated_at }}
+</footer>
+
+</body>
+</html>
